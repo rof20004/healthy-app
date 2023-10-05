@@ -9,8 +9,12 @@ class ListOfConsultasScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     HomeController homeController = context.watch<HomeController>();
+
+
     return Scaffold(
-      bottomNavigationBar: const MyNavigationBar(selectedIndex: 1,),
+      bottomNavigationBar: const MyNavigationBar(
+        selectedIndex: 1,
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(top: 16.0, left: 16, right: 16),

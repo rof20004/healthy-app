@@ -78,7 +78,7 @@ class CadastroProfissionalScreen extends StatelessWidget {
                     ),
                     MyElevatedButton(onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        Modular.to.navigate("/homeProf");
+                        Modular.to.navigate("/cadProf/homeProf");
                       }
                     }, text: "CONFIRMAR")
                   ],
