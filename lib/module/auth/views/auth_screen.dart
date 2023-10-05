@@ -28,7 +28,7 @@ class AuthScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Text(
-              "Selecione o seu ícone",
+              "Escolha o seu avatar",
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             Row(
@@ -38,11 +38,9 @@ class AuthScreen extends StatelessWidget {
                   onPressed: () {},
                   icon: const Icon(Icons.arrow_left_rounded),
                 ),
-                SizedBox(
-                  width: 200,
-                  height: 200,
-                  child: Image.asset(iconList[authController.actualIndex]),
-                ),
+                CircleAvatar(
+                    backgroundImage:
+                        AssetImage(iconList[authController.actualIndex]),minRadius: 100,),
                 IconButton(
                   onPressed: () {
                     if (authController.actualIndex == 5) {
