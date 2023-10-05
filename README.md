@@ -1,6 +1,8 @@
 # app
 
-Código aplicável pra todas as plataformas (web, android, linux, macIOs e windows)
+Código aplicável pra todas as plataformas (web, android, linux, macIOs e windows). Entretanto, as interfaces do aplicativo foram pensadas para android/iOs. Ele vai funcionar caso rode na web, mas algumas telas podem não estar com seus widgets posicionados de forma correta.
+
+Para rodar esse código você vai precisar do flutter, assim como o vscode e o android studio propriamente instalados no seu computador. É importante verificar se o android studio está com uma imagem de celular instalada para que ela seja verificada pelo vscode e seja possível iniciar o aplicativo pelo emulador do celular. (O android studio sempre da problema, pelo menos é o caso que acontece com o coitado que esta escrevendo este readme. Caso dê algum problema na hora de compilar que seja relacionado ao android studio, certifique-se que você está iniciando o emulador em modo "cold boot", e, se tudo, tudo, absolutamente tudo der errado, execulte em modo web e reduza a tela de forma com que ela pegue o formato próximo de um celular).
 
 Eu vou dividir esse readMe em duas partes. A parte do *usuário* e a parte do *profissional*
 
@@ -23,5 +25,5 @@ Eu vou dividir esse readMe em duas partes. A parte do *usuário* e a parte do *p
         uma validação mais prática devido ao conhecimento do público. Enfim ele vai inserir os dados dele (nome, cpf, cnp, email, telefone e 
         senha), e depois, TEORICAMENTE O CERTO A SE FAZER SERIA VALIDAR COM A API PÚBLICA A VERACIDADE DESSES DADOS. Como infelizmente nós 
         não temos os recursos para isso, seguimos automaticamente para a tela de gerenciamento de consultas. Onde o profissional consegue 
-        ver a lista de todos os estudantes que marcaram consultas com ele, assi como consegue ver o detalhedas consultas clicando nelas.
+        ver a lista de todos os estudantes que marcaram consultas com ele.
         
