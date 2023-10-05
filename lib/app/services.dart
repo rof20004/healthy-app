@@ -2,24 +2,14 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class RemoteService {
-  final String baseUrl;
-
-  RemoteService(this.baseUrl);
-
-  Future<dynamic> getUserConsultas() async {
-    final response = await http.get(Uri.parse('$baseUrl/user_consultas'));
+  Future<dynamic> getListOfProfessionals() async {
+    final response = await http.get(Uri.parse('https://api.ajuda.academy/profissionais'));
 
     return _handleResponse(response);
   }
 
   Future<dynamic> getProfConsultas() async {
-    final response = await http.get(Uri.parse('$baseUrl/prof_consultas'));
-
-    return _handleResponse(response);
-  }
-
-  Future<dynamic> getConsultasDetails(int consultaId) async {
-    final response = await http.get(Uri.parse('$baseUrl/consultas/$consultaId'));
+    final response = await http.get(Uri.parse('https://api.ajuda.academy/profissional-agendas/profissionais/1'));
 
     return _handleResponse(response);
   }
