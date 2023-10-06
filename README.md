@@ -2,6 +2,9 @@
 
 Código aplicável pra todas as plataformas (web, android, linux, macIOs e windows). Entretanto, as interfaces do aplicativo foram pensadas para android/iOs. Ele vai funcionar caso rode na web, mas algumas telas podem não estar com seus widgets posicionados de forma correta.
 
+As Apis estão funcionais e o código delas estão na pasta lib/app/common/services.dart . Para esse exemplo de aplicação todos os dados estão
+hardcode mockados no código, mas implementar os dados da api seria simples a partir do arquivo de services.
+
 Para rodar esse código você vai precisar do flutter, assim como o vscode e o android studio propriamente instalados no seu computador. É importante verificar se o android studio está com uma imagem de celular instalada para que ela seja verificada pelo vscode e seja possível iniciar o aplicativo pelo emulador do celular. (O android studio sempre da problema, pelo menos é o caso que acontece com o coitado que esta escrevendo este readme. Caso dê algum problema na hora de compilar que seja relacionado ao android studio, certifique-se que você está iniciando o emulador em modo "cold boot", e, se tudo, tudo, absolutamente tudo der errado, execulte em modo web e reduza a tela de forma com que ela pegue o formato próximo de um celular).
 
 Eu vou dividir esse readMe em duas partes. A parte do *usuário* e a parte do *profissional*
